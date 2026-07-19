@@ -5,9 +5,12 @@ from telebot import types
 import pymongo
 from http.server import BaseHTTPRequestHandler
 
-BOT_TOKEN = os.environ["BOT_TOKEN"]
-OWNER_ID = int(os.environ["OWNER_ID"])
-MONGODB_URI = os.environ["MONGODB_URI"]
+BOT_TOKEN = "8851949538:AAGmN3HkV_owJo2FTed094758T82Mm8Wt9Q" 
+
+
+OWNER_ID = 1540835004
+MONGODB_URI = mongodb+srv://blackart2585_db_userIuFprmlAp3EasGK6
+:@cluster0.luuc6x8.mongodb.net/?appName=Cluster0
 
 bot = telebot.TeleBot(BOT_TOKEN, parse_mode=None)
 client = pymongo.MongoClient(MONGODB_URI)
